@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bihana privacy policy</title>
+<meta name="description" content="What the Bihana alarm app does with your information.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { color-scheme: light dark; --bg: #fdfaf5; --ink: #1f1a14; --dim: #5d5348; --accent: #b4531f; --rule: #e6ddd0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14110e; --ink: #efe8dd; --dim: #b5aa9c; --accent: #f0a066; --rule: #3a322a; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 12px; }
+  h2 { font-size: 1.25rem; margin: 2.2em 0 0.4em; padding-top: 1em; border-top: 1px solid var(--rule); }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  em { color: var(--dim); }
+  li { margin: 0.35em 0; }
+  .app { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; color: inherit; text-decoration: none; font-weight: 600; }
+  .app img { width: 48px; height: 48px; border-radius: 12px; }
+  footer { margin-top: 48px; color: var(--dim); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+<a class="app" href="index.html"><img src="icon.png" alt="">Bihana</a>
+<h1>Bihana privacy policy</h1>
+<p><em>Bihana is a sunrise, sun and moon alarm clock for Android, made by Stingfu Private Limited. This page
+says what the app does with your information. Last changed: 21 October 2026.</em></p>
+<p><strong>In one sentence:</strong> your place is kept on your phone, for the sun and moon times; to show its name,
+the app sends it to OpenStreetMap, rounded to about a kilometre, and a city you type is sent there to
+find it; the app sends nothing else, and there is no account, no advertising and no tracking.</p>
+<h2>What the app keeps on your phone</h2>
+<ul>
+<li>Your alarms and their settings, including any sound file you chose for an alarm.</li>
+<li>Your place, if you give the app one (by GPS or by typing a city), and the name of that place.</li>
+<li>Your choices in Settings, and which tips you have closed.</li>
+<li>A table of the coming months' sunrise, sunset and moon times for your place, so alarms can ring
+while the app is closed.</li>
+<li>A log of when alarms were set and when they rang, so the app can tell you when an alarm last rang.
+It holds alarm times and the phone's state at the time (for example whether the screen was on), not
+your place.</li>
+</ul>
+<p>Apart from the two place-name requests described below, the app sends none of this anywhere. The
+app has no server and no account. If you use Android's own backup to your Google account, or move to a new
+phone with Android's transfer, Android may copy the app's data as it does for most apps; that copy is
+yours, under your Google account, and the developer cannot see it. Uninstalling the app, or clearing
+its storage in Android's settings, deletes the copy on the phone.</p>
+<h2>What the app sends</h2>
+<p>Only two things, both to OpenStreetMap's place-name service (Nominatim, run by the OpenStreetMap
+Foundation, a non-profit registered in the United Kingdom), and only so the app can show the name of
+a place:</p>
+<ol>
+<li>
+<strong>Your place, to look up its name.</strong> When the app finds your place by GPS, it sends that place, rounded
+to two decimal places (about one kilometre), and gets back the name of the town or city. It asks
+again only when you have moved about 5 km or more, or when an earlier lookup got no answer;
+otherwise it uses the name it already has.</li>
+<li>
+<strong>A city you type, to find it.</strong> When you type a city, the text you typed is sent to find where
+that city is.</li>
+</ol>
+<p>The app names itself in these requests ("Bihana", with the address of the app's web site and the app's
+email address), as OpenStreetMap asks of every app. Like every
+web request from a phone, they also carry Android's standard browser description, which names the
+phone model and the Android version, the phone's language, the app's own address inside the phone
+(https://localhost), and your internet address, which any website you visit sees. The app adds nothing else: no account, no advertising identifier, none of your
+alarms or contacts.</p>
+<p>These requests are the only way the app can show where you are by name. To avoid them, give the app
+no place: clock alarms work without one, but sun and moon alarms need a place to be worked out.</p>
+<p>OpenStreetMap's own handling of the requests it receives is described in the OpenStreetMap
+Foundation's privacy policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="nofollow">https://osmfoundation.org/wiki/Privacy_Policy</a></p>
+<p>Alarms, sun and moon times and the sky's colours are all worked out on the phone. None of them
+needs the internet.</p>
+<h2>What the app does not do</h2>
+<ul>
+<li>No account, sign-in or profile.</li>
+<li>No advertising and no advertising identifiers.</li>
+<li>No analytics, crash reporting or tracking of any kind.</li>
+<li>No sale of your information, and no sharing beyond the two OpenStreetMap requests above.</li>
+<li>No location history: the app keeps your current place and the place it last found a name for, not a
+record of where you have been.</li>
+</ul>
+<h2>Permissions, and why each is asked</h2>
+<ul>
+<li>
+<strong>Location (precise and approximate):</strong> to work out sunrise, sunset and moon times for where you
+are. Android asks for it when you tap "Use my location", or "Set location" or "Update" in Alarm
+health; you can type a city instead and never grant it. Once you have used your location, the app
+checks it again each time you open it or bring it back on screen (never in the background), so sun
+times follow you when you travel (if you allowed location only once, Android may ask again then); a
+typed city is never checked again.</li>
+<li>
+<strong>Notifications and full-screen alarms:</strong> to show the ringing alarm over the lock screen, and the
+daily sky notices you switch on.</li>
+<li>
+<strong>Exact alarms and starting after a restart:</strong> so alarms ring at their minute, also after the phone
+restarts.</li>
+<li>
+<strong>Keeping the phone awake, vibration and a foreground service for sound:</strong> so the alarm can sound
+and vibrate until you stop it.</li>
+<li>
+<strong>Internet:</strong> only for the place-name requests above.</li>
+</ul>
+<h2>Children</h2>
+<p>The app is a general alarm clock. It collects nothing from anyone, child or adult, beyond what is
+described above.</p>
+<h2>Changes</h2>
+<p>If the app ever starts sending anything else, this page will say so before that version is
+released, with the date at the top changed.</p>
+<h2>Contact</h2>
+<p>Bihana is made by Stingfu Private Limited, India. Questions or requests about your data: <a href="mailto:bihana.support@gmail.com">bihana.support@gmail.com</a>.</p>
+</main>
+</body>
+</html>
